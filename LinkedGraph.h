@@ -12,7 +12,7 @@
 using namespace std;
 
 // Class to represent a graph
-class Graph {
+class LinkedGraph {
     int verticesCount;    // Number of vertices'
 
     // Pointer to an array containing adjacency listsList
@@ -35,7 +35,7 @@ class Graph {
 
 public:
     // Constructor
-    Graph(int _verticesCount) {
+    LinkedGraph(int _verticesCount) {
         this->verticesCount = _verticesCount;
         adj = new list<int>[_verticesCount];
     }
@@ -70,7 +70,7 @@ public:
 
 void testGraphTopologicalSort(){
     // Create a graph given in the above diagram // 7, 5, 11, 3, 10, 8, 9, 2 (largest-numbered available vertex first)
-    Graph g(12);
+    LinkedGraph g(12);
     g.addEdge(5, 11);
     g.addEdge(7, 11);
     g.addEdge(7, 8);

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Graph.h"
+#include "LinkedGraph.h"
 
 using namespace std;
 
